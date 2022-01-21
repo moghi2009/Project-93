@@ -1,19 +1,18 @@
 
 //ADD YOUR FIREBASE LINKS HERE
-const firebaseConfig = {
-      apiKey: "AIzaSyCIdUAcfAG_xzCNUC6qbPabbLrtKPn2vsw",
-      authDomain: "c-93-be750.firebaseapp.com",
-      databaseURL: "https://c-93-be750-default-rtdb.firebaseio.com",
-      projectId: "c-93-be750",
-      storageBucket: "c-93-be750.appspot.com",
-      messagingSenderId: "915351402397",
-      appId: "1:915351402397:web:f92723aeeefbfe8bdbe174",
-      measurementId: "G-DE0T00ZJX4"
+var firebaseConfig = {
+      apiKey: "AIzaSyDAi7wRiv5EkEPMfJYo3CC2Gg4wSj__PVc",
+      authDomain: "project-94-e4a99.firebaseapp.com",
+      databaseURL: "https://project-94-e4a99-default-rtdb.firebaseio.com",
+      projectId: "project-94-e4a99",
+      storageBucket: "project-94-e4a99.appspot.com",
+      messagingSenderId: "458940241843",
+      appId: "1:458940241843:web:5a18d59310facdf8de5dc6",
+      measurementId: "G-Z41JQXVB4L"
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+firebase.initializeApp(firebaseConfig);
 
 function getData() {
       firebase.database().ref("/").on('value', function (snapshot) {
